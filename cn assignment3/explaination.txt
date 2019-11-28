@@ -1,0 +1,38 @@
+CN ASSIGNMENT:03
+
+Group no:18
+Name:Swati Pai/1KS17CS089
+Name:Sakshi Kumari/1KS17CS071
+
+Question:We had to find a solution for question number 02(section A)
+
+In this question we have to have 2machines A and B.
+Machine A pings request to B. It will send a message/sec and it will do it for 1min continuously.
+After a min it will stop sending the message for 30sec.
+
+B implements rate limit (Rate limit is used to control the amount of incoming and outgoing traffic into and from a network.)
+using the j-drop for A---- drops only echo reply and not the request.
+
+Now we will ping from another machine(in our program we have taken it as 127.0.0.1) which will 
+send 1message/sec in which no packet drop will occur.
+
+Computing X and Y:
+In our team the lowest USN is 71.
+Therefore, D=71 and X= D+10 = 71+10 = 81
+Y =X/2 = 81/2 = 40.5 ~ 40
+
+Port number for macjine A and machine B:
+For machine A: 20000+X = 20000+81 = 20018
+For machine B: 20000+Y = 20000+40 = 20040 
+
+The program that we have implemented has some errors and needs to be further implemented.
+But we have done everything what we were able to understand.
+
+References:
+https://www.keycdn.com/support/rate-limiting
+https://www.geeksforgeeks.org/pinging-ip-address-java/
+https://www.geeksforgeeks.org/iptables-command-in-linux-with-examples/
+
+Difficulties faced:
+we had to go through many websites to understand how ping exactly works .
+we also had to understand rate limit and what j-drop was and their working.
